@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+  background-color: #ecedee;
+}
+header{
+  background-color: white;
+}
+#header-inner {
+  height: 91px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#logo {
+  content: url(atcomm_logo.png);
+  margin: 10px;
+}
+a {
+  float: right;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-left: 3px;
+  padding: 8px;
+  border-radius: 3px;
+  border-color: #c5c5c5;
+  border-width: 2px;
+  border-style: solid;
+  text-decoration: none;
+  color: #004f9d;
+}
+a:first-child{
+  margin-right: 10px;
+}
+a:hover {
+  background-color: #004f9d;
+  border-color: #004f9d;
+  color: white;
+}
+nav {
+  background-color: #004f9d;
+  height: 60px;
+}
+ul {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  line-height: 60px;
+  list-style: none;
+}
+li {
+  flex: 1;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+li:hover {
+  background-color: #1a70c5;
+}
+
+#container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+.box {
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: white;
+  height: 500px;
+}
+#mobile{
+  visibility: hidden;
+  line-height: 60px;
+  color: white;
+  font-weight: bold;
+}
+#banner{
+  content: url(city.jpg);
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-color: #004f9d;
+  border-bottom-width: 5px;
+}
+
+/*---MOBILE DEVICE---*/
+
+@media (max-width: 900px) {
+  a {
+    display: none;
+  }
+  #logo{
+    width: 150px;
+    align-items: center;
+    margin: 10px;
+  }
+  nav {
+    width: 100%;
+  }
+  ul{
+    display: none;
+  }
+  #mobile {
+    visibility: visible;
+    text-align: right;
+    padding-right: 10px;
+  }
+  #banner{
+    content: url(city.jpg);
+    width: 150%;
+  }
+
+}
