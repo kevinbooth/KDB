@@ -171,6 +171,9 @@ li:hover {
   #container {
     padding: 5px;
   }
+  #content-bar {
+    padding: 20px 0 20px 0;
+  }
   .content-area {
     font-size: 18px;
   }
