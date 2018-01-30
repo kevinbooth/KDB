@@ -171,5 +171,10 @@ li:hover {
   #container {
     padding: 5px;
   }
-
+  .content-area {
+    font-size: 18px;
+  }
+  .mobile-head {
+    font-size: 22px;
+  }
 }
