@@ -70,6 +70,7 @@ header{
   background-color: #004f9d;
   text-decoration: none;
   color: white;
+  white-space: nowrap;
 }
 #btn3:hover {
   background-color: #fe9a32;
