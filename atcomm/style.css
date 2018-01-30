@@ -83,16 +83,16 @@ li:hover {
   background-size: auto;
   height: 450px;
   border-bottom-style: solid;
-  border-bottom-color: #004f9d;
+  border-bottom-color: #fe9a32;
   border-bottom-width: 5px;
   text-align: center;
   font-size: 30px;
 }
 #caption{
-  font-weight: bold;
+  font-weight: 500;
   line-height: 400px;
   color: white;
-  font-size: 60px;
+  font-size: 50px;
 }
 #cap{
   color: #004f9d;
