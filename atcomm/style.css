@@ -145,7 +145,7 @@ li:hover {
 }
 /*---MOBILE DEVICE---*/
 
-@media (max-width: 800px) {
+@media (max-width: 830px) {
   #btn {
     display: none;
   }
