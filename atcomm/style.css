@@ -92,7 +92,7 @@ li:hover {
   font-size: 30px;
 }
 #cap-container{
-  padding-top: 150px;
+  padding-top: 90px;
 }
 #caption{
   font-weight: 600;
@@ -101,6 +101,7 @@ li:hover {
 }
 #sub-caption {
   padding-top: 20px;
+  padding-bottom: 30px;
   color: white;
 }
 .carousel {
@@ -108,7 +109,14 @@ li:hover {
   margin: 0 auto;
   margin-top: 10px;
 }
-
+#banner-btn{
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: white;
+  color: #004f9d;
+}
 /*---MOBILE DEVICE---*/
 
 @media (max-width: 900px) {
@@ -135,7 +143,7 @@ li:hover {
     height: 200px;
   }
   #cap-container{
-    padding-top: 70px;
+    padding-top: 40px;
   }
   #caption{
     font-size: 22px;
