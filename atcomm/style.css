@@ -43,6 +43,19 @@ header{
   border-color: #004f9d;
   color: white;
 }
+#btn2 {
+  float: right;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-left: 6px;
+  padding: 9px;
+  background-color: #004f9d;
+  border-color: #004f9d;
+  border-width: 2px;
+  border-style: solid;
+  text-decoration: none;
+  color: white;
+}
 nav {
   background-color: #004f9d;
   height: 60px;
