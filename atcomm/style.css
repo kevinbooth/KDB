@@ -79,24 +79,26 @@ li:hover {
   font-weight: bold;
 }
 #banner{
-  background-image: url(banner2.png);
+  background-image: url(banner3.png);
   background-size: auto;
   height: 450px;
   border-bottom-style: solid;
   border-bottom-color: #fe9a32;
-  border-bottom-width: 5px;
+  border-bottom-width: 8px;
   text-align: center;
   font-size: 30px;
 }
+#cap-container{
+  padding-top: 150px;
+}
 #caption{
-  font-weight: 500;
-  line-height: 400px;
+  font-weight: 600;
   color: white;
   font-size: 50px;
 }
-#cap{
-  color: #004f9d;
-  line-height: -200px;
+#sub-caption {
+  padding-top: 20px;
+  color: white;
 }
 .carousel {
   max-width: 967px;
@@ -127,7 +129,7 @@ li:hover {
     padding-right: 10px;
   }
   #banner{
-    background-image: url(banner2.png);
+    background-image: url(banner3.png);
     height: 200px;
   }
   #caption{
