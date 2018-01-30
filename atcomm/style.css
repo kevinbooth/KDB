@@ -32,10 +32,10 @@ header{
   text-decoration: none;
   color: #004f9d;
 }
-a:first-child{
+#btn:first-child{
   margin-right: 10px;
 }
-a:hover {
+#btn:hover {
   background-color: #004f9d;
   border-color: #004f9d;
   color: white;
