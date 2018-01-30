@@ -118,23 +118,28 @@ li:hover {
 }
 /*---MOBILE DEVICE---*/
 
-@media (max-width: 900px) {
-  a {
+@media (max-width: 800px) {
+  #btn {
     display: none;
+  }
+  #header-inner {
+    height: 65px;
   }
   #logo{
     width: 150px;
     align-items: center;
-    margin: 10px;
+    margin: 5px;
   }
   nav {
     width: 100%;
+    height: 45px;
   }
   ul{
     display: none;
   }
   #mobile {
     visibility: visible;
+    line-height: 45px;
     text-align: right;
     padding-right: 10px;
   }
@@ -150,6 +155,9 @@ li:hover {
   #sub-caption{
     padding: 10px;
     font-size: 16px;
+  }
+  #container {
+    padding: 5px;
   }
 
 }
