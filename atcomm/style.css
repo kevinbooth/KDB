@@ -1,9 +1,18 @@
+@font-face {
+    font-family: Oswald-Light;
+    src: url(fonts/Oswald-Light.ttf);
+}
+@font-face {
+    font-family: Oswald-Regular;
+    src: url(fonts/Oswald-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  font-family: sans-serif;
+  font-family: oswald-light, sans-serif;
+  letter-spacing: 1px;
   margin: 0 auto;
   background-color: #f2f2f2;
 }
@@ -15,44 +24,39 @@ header{
   top: 0;
 }
 #header-inner {
-  height: 91px;
+  height: 81px;
   max-width: 1200px;
   margin: 0 auto;
 }
 #logo {
-  content: url(atcomm_logo.png);
+  content: url(images/atcomm-logo-svg.svg);
   margin: 10px;
 }
 #btn {
   float: right;
   font-weight: bold;
-  margin-top: 40px;
-  margin-left: 6px;
-  padding: 9px;
-  border-color: #c5c5c5;
-  border-width: 2px;
-  border-style: solid;
+  font-size: 14px;
+  margin: 40px 0 0 6px;
+  padding: 8px 20px;
   text-decoration: none;
   color: #004f9d;
+  border-radius: 3px;
 }
 #btn:first-child{
   margin-right: 10px;
 }
 #btn:hover {
   background-color: #004f9d;
-  border-color: #004f9d;
   color: white;
 }
 #btn2 {
   float: right;
   font-weight: bold;
-  margin-top: 40px;
-  margin-left: 6px;
-  padding: 9px;
+  font-size: 14px;
+  margin: 40px 5px 0 6px;
+  padding: 8px 20px;
   background-color: #004f9d;
-  border-color: #004f9d;
-  border-width: 2px;
-  border-style: solid;
+  border-radius: 3px;
   text-decoration: none;
   color: white;
 }
@@ -66,8 +70,9 @@ header{
 #btn3 {
   font-weight: bold;
   font-size: 25px;
-  padding: 13px;
+  padding: 10px 24px;
   background-color: #004f9d;
+  border-radius: 3px;
   text-decoration: none;
   color: white;
   white-space: nowrap;
@@ -77,35 +82,41 @@ header{
 }
 nav {
   background-color: #004f9d;
-  height: 60px;
+  height: 50px;
+  font-family: Oswald-Regular;
+  letter-spacing: 1px;
+  font-weight: normal;
 }
 ul {
   max-width: 1200px;
   display: flex;
   align-items: center;
   margin: 0 auto;
-  line-height: 60px;
+  line-height: 50px;
   list-style: none;
 }
 li {
   flex: 1;
   color: white;
-  font-weight: bold;
   text-align: center;
 }
 li:hover {
   background-color: #1a70c5;
 }
-
-#container {
-  max-width: 1220px;
+.container {
+  padding: 20px 0 0 0;
+  max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
 }
-.box {
-  margin-top: 10px;
-  border-radius: 10px;
-  background-color: white;
-  height: 500px;
+.grid-fourth {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  height: 400px;
+}
+#solution-item {
+  padding: 10px;
+  text-align: center;
 }
 #mobile-menu{
   visibility: hidden;
@@ -114,24 +125,21 @@ li:hover {
   font-weight: bold;
 }
 #banner{
-  background-image: url(banner3.png);
+  background: url(banner3.png) no-repeat center center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   width: 100%;
   height: 400px;
-  border-bottom-style: solid;
-  border-bottom-color: #fe9a32;
-  border-bottom-width: 8px;
+  border-bottom: 8px solid #fe9a32;
   text-align: center;
   font-size: 30px;
-  margin-top: 151px;
+  margin-top: 131px;
 }
 #cap-container{
   padding-top: 90px;
 }
 #caption{
-  font-weight: 600;
+  font-family: Oswald-Regular;
+  font-weight: 500;
   color: white;
   font-size: 50px;
 }
@@ -139,6 +147,8 @@ li:hover {
   padding-top: 20px;
   padding-bottom: 30px;
   color: white;
+  font-size: 30px;
+  font-weight: 500;
 }
 #banner-btn{
   margin-top: 10px;
@@ -156,11 +166,18 @@ li:hover {
   box-shadow: 0px 3px 10px lightgray;
 }
 .content-area{
-  max-width: 1220px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .sub-content {
   padding-top: 20px;
+}
+.partner-img {
+  vertical-align: middle;
+}
+#middle{
+  height: 160px;
+  line-height: 160px;
 }
 /*---MOBILE DEVICE---*/
 
@@ -174,16 +191,15 @@ li:hover {
   #logo{
     width: 150px;
     align-items: center;
-    margin: 5px;
+    margin: 5px 0 5px 5px;
   }
   nav {
     width: 100%;
     height: 45px;
   }
   #btn2 {
-    margin-top: 13px;
+    margin-top: 16px;
     margin-right: 13px;
-    padding: 6px;
   }
   #btn3:first-child{
     margin-right: 0;
@@ -206,7 +222,7 @@ li:hover {
     margin-top: 110px;
   }
   #cap-container{
-    padding-top: 40px;
+    padding: 40px 5px 0 5px;
   }
   #caption{
     font-size: 22px;
@@ -222,7 +238,7 @@ li:hover {
     padding: 5px;
   }
   #content-bar {
-    padding: 20px 0 20px 0;
+    padding: 20px 5px 20px 5px;
   }
   .content-area {
     font-size: 18px;
