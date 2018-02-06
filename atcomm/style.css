@@ -113,7 +113,6 @@ li:hover {
 .grid-fourth {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(286px, 1fr));
-  height: 400px;
 }
 #solution-item {
   padding: 10px;
@@ -186,6 +185,21 @@ li:hover {
 #middle{
   height: 160px;
   line-height: 160px;
+}
+.grid-two {
+  border-top: 2px solid #e1e1e1;
+  padding: 30px 10px 0 10px;
+  display: grid;
+   grid-template-columns: 66% 33%;
+}
+.col-2-3 {
+  padding-right: 20px;
+}
+.col-1-3 {
+}
+#video {
+  content: url(images/video.png);
+  width: 100%;
 }
 /*---MOBILE DEVICE---*/
 
