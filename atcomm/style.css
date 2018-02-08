@@ -23,6 +23,7 @@ header{
   width: 100%;
   overflow: hidden;
   top: 0;
+  z-index: 1000 !important;
 }
 #header-inner {
   height: 81px;
@@ -113,7 +114,7 @@ li:hover {
 .grid-fourth {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(286px, 1fr));
-  padding: 0 0 30px 0;
+  padding: 0 0 40px 0;
 }
 #solution-item {
   padding: 10px;
@@ -187,12 +188,19 @@ li:hover {
   height: 160px;
   line-height: 160px;
 }
+.lower-cont {
+  background-color: white;
+}
+.single-item {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 0 30px 0;
+}
 .grid-two {
   border-top: 1px solid #d8d8d8;
   padding: 30px 10px 0 10px;
   display: grid;
    grid-template-columns: 66% 33%;
-   background-color: white;
 }
 .col-2-3 {
   padding-right: 20px;

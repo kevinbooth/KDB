@@ -20,6 +20,8 @@ function playStopVideo() {
 $( document ).ready(function() {
     "use strict";
 
+  $(".single-item").slick({dots: true});
+
   $(window).scroll(function() {
     playStopVideo();
   });
