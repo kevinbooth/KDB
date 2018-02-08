@@ -6,7 +6,21 @@ function openMobileMenu() {
   });
 }
 
-// A $( document ).ready() block.
+function playStopVideo() {
+  $('video').each(function(){
+      if ($(this).is(":in-viewport( 400 )")) {
+          $(this)[0].play();
+      } else {
+          $(this)[0].pause();
+      }
+  });
+}
+
+// $( document ).ready() block.
 $( document ).ready(function() {
-    openMobileMenu();
+    "use strict";
+
+  $(window).scroll(function() {
+    playStopVideo();
+  });
 });
