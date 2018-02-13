@@ -20,7 +20,12 @@ function playStopVideo() {
 $( document ).ready(function() {
     "use strict";
 
-  $(".single-item").slick({dots: true});
+  $(".single-item").slick({
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    arrows: false
+  });
 
   $(window).scroll(function() {
     playStopVideo();
