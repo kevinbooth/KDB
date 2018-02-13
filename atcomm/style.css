@@ -109,8 +109,9 @@ li {
   color: white;
   text-align: center;
 }
-li:hover {
+#tabs > *:hover {
   background-color: #1a70c5;
+  cursor: pointer;
 }
 .container {
   padding: 20px 0 0 0;
