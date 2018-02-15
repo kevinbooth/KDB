@@ -333,4 +333,7 @@ footer {
   .grid-footer {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   }
+  #overlay{
+    height: 250px;
+  }
 }
