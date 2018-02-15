@@ -221,15 +221,37 @@ li {
 .support-bar {
   background: #d8d8d8;
   padding: 30px 0 70px 0;
+  margin-bottom: 50px;
 }
-#center {
+.center {
   text-align: center;
   float: left;
-  padding-top: 5px;
+  padding: 5px 15px 0 15px;
 }
 .content-area-small {
   max-width: 400px;
   margin: 0 auto;
+}
+footer {
+  background-color: #004f9d;
+  border-top: 8px solid #fe9a32;
+}
+.grid-footer {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  color: white;
+}
+#footer-menu-item {
+  padding: 30px;
+  font-size: 14px;
+}
+#copyright {
+  color: white;
+  text-align: center;
+  padding: 0 10px 20px 10px;
+  font-size: 12px;
 }
 /*---MOBILE DEVICE---*/
 
@@ -297,5 +319,18 @@ li {
   }
   .mobile-head {
     font-size: 22px;
+  }
+  .grid-fourth {
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+  .grid-two {
+    grid-template-columns: 100%;
+  }
+  #btn4 {
+    padding: 8px 16px 8px 16px;
+    margin-right: 15px;
+  }
+  .grid-footer {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   }
 }
