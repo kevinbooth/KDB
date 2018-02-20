@@ -147,6 +147,9 @@ nav {
 .mobile-dropdown li:last-child {
   border: none;
 }
+.mobile-dropdown li:hover {
+  background-color: #1a70c5;
+}
 .banner{
   background: url(banner3.jpg) no-repeat center center;
   background-size: cover;
