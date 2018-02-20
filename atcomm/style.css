@@ -149,6 +149,7 @@ nav {
 }
 .mobile-dropdown li:hover {
   background-color: #1a70c5;
+  cursor: pointer;
 }
 .banner{
   background: url(banner3.jpg) no-repeat center center;
