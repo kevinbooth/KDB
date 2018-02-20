@@ -1,8 +1,8 @@
 function openMobileMenu() {
+  var dropdown =$('.mobile-dropdown');
+
   $('.mobile-menu').click(function() {
-    $(this).find(ul.child).show(200);
-  }, function () {
-    $(this).find('#mobile-dropdown'.child).hide();
+    dropdown.slideToggle(1000)
   });
 }
 
@@ -19,6 +19,8 @@ function playStopVideo() {
 // $( document ).ready() block.
 $( document ).ready(function() {
     "use strict";
+
+  openMobileMenu();
 
   $(".single-item").slick({
     dots: true,

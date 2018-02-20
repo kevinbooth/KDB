@@ -96,7 +96,7 @@ nav {
   letter-spacing: 1px;
   font-weight: normal;
 }
-ul {
+.tabs {
   max-width: 1200px;
   display: flex;
   align-items: center;
@@ -104,12 +104,12 @@ ul {
   line-height: 50px;
   list-style: none;
 }
-li {
+.tabs li {
   flex: 1;
   color: white;
   text-align: center;
 }
-#tabs > *:hover {
+.tabs > *:hover {
   background-color: #1a70c5;
   cursor: pointer;
 }
@@ -135,9 +135,19 @@ li {
   font-weight: bold;
 }
 .mobile-dropdown {
-
+  display: none;
+  color: white;
+  background-color: #004f9d;
+  text-align: right;
 }
-#banner{
+.mobile-dropdown li {
+  padding: 13px;
+  border-bottom: 1px solid #587b9e;
+}
+.mobile-dropdown li:last-child {
+  border: none;
+}
+.banner{
   background: url(banner3.jpg) no-repeat center center;
   background-size: cover;
   width: 100%;
@@ -147,23 +157,21 @@ li {
   font-size: 30px;
   margin-top: 131px;
 }
-#overlay {
+.overlay {
   background-color: rgba(0, 80, 160, .5);
   height: 400px;
 }
-#cap-container{
+.cap-container{
   padding-top: 90px;
+  color: white;
 }
 #caption{
   font-family: Oswald-Regular;
   font-weight: 500;
-  color: white;
   font-size: 50px;
 }
 #sub-caption {
-  padding-top: 20px;
-  padding-bottom: 30px;
-  color: white;
+  padding: 20px 0 30px 0;
   font-size: 30px;
   font-weight: 500;
 }
@@ -175,7 +183,7 @@ li {
   background-color: white;
   color: #004f9d;
 }
-#content-bar{
+.content-bar{
   padding: 50px 0 50px 0;
   background-color: white;
   text-align: center;
@@ -242,10 +250,12 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   color: white;
+  grid-row-gap: 10px;
+  padding: 30px;
 }
 #footer-menu-item {
-  padding: 30px;
   font-size: 14px;
+  list-style: none;
 }
 #copyright {
   color: white;
@@ -256,6 +266,9 @@ footer {
 /*---MOBILE DEVICE---*/
 
 @media (max-width: 830px) {
+  h1, h2, h3, p {
+    padding: 0 10px 0 10px
+  }
   #btn {
     display: none;
   }
@@ -282,7 +295,7 @@ footer {
     margin-bottom: 10px;
     font-size: 16px;
   }
-  ul{
+  .tabs {
     display: none;
   }
   .mobile-menu {
@@ -290,12 +303,13 @@ footer {
     line-height: 45px;
     text-align: right;
     padding-right: 13px;
+    cursor: pointer;
   }
-  #banner{
+  .banner{
     height: 200px;
     margin-top: 110px;
   }
-  #cap-container{
+  .cap-container{
     padding: 40px 5px 0 5px;
   }
   #caption{
@@ -311,7 +325,7 @@ footer {
   #container {
     padding: 5px;
   }
-  #content-bar {
+  .content-bar {
     padding: 20px 5px 20px 5px;
   }
   .content-area {
@@ -333,7 +347,7 @@ footer {
   .grid-footer {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   }
-  #overlay{
+  .overlay{
     height: 200px;
   }
 }
