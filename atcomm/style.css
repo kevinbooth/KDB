@@ -201,7 +201,7 @@ nav {
 .sub-content {
   padding-top: 20px;
 }
-.partner-img {
+#middle img {
   vertical-align: middle;
 }
 #middle{
@@ -266,6 +266,10 @@ footer {
   text-align: center;
   padding: 0 10px 20px 10px;
   font-size: 12px;
+}
+.li-padding {
+  list-style: none;
+  padding: 20px 0 0 0;
 }
 /*---MOBILE DEVICE---*/
 
