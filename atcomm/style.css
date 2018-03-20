@@ -25,7 +25,7 @@ header{
   top: 0;
   z-index: 1000 !important;
 }
-#header-inner {
+.header__inner {
   height: 81px;
   max-width: 1200px;
   margin: 0 auto;
@@ -96,7 +96,7 @@ nav {
   letter-spacing: 1px;
   font-weight: normal;
 }
-.tabs {
+.header__tabs {
   max-width: 1200px;
   display: flex;
   align-items: center;
@@ -104,12 +104,12 @@ nav {
   line-height: 50px;
   list-style: none;
 }
-.tabs li {
+.header__tabs li {
   flex: 1;
   color: white;
   text-align: center;
 }
-.tabs > *:hover {
+.header__tabs > *:hover {
   background-color: #1a70c5;
   cursor: pointer;
 }
@@ -128,26 +128,26 @@ nav {
   padding: 10px;
   text-align: center;
 }
-.mobile-menu{
+.header__mobile--menu{
   visibility: hidden;
   line-height: 60px;
   color: white;
   font-weight: bold;
 }
-.mobile-dropdown {
+.header__mobile--dropdown {
   display: none;
   color: white;
   background-color: #004f9d;
   text-align: right;
 }
-.mobile-dropdown li {
+.header__mobile--dropdown li {
   padding: 13px;
   border-bottom: 1px solid #587b9e;
 }
-.mobile-dropdown li:last-child {
+.header__mobile--dropdown li:last-child {
   border: none;
 }
-.mobile-dropdown li:hover {
+.header__mobile--dropdown li:hover {
   background-color: #1a70c5;
   cursor: pointer;
 }
@@ -280,7 +280,7 @@ footer {
   #btn {
     display: none;
   }
-  #header-inner {
+  .header__inner {
     height: 65px;
   }
   #logo{
@@ -303,10 +303,10 @@ footer {
     margin-bottom: 10px;
     font-size: 16px;
   }
-  .tabs {
+  .header__tabs {
     display: none;
   }
-  .mobile-menu {
+  .header__mobile--menu {
     visibility: visible;
     line-height: 45px;
     text-align: right;

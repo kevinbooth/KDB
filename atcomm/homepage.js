@@ -1,7 +1,7 @@
 function openMobileMenu() {
-  var dropdown =$('.mobile-dropdown');
+  var dropdown =$('.header__mobile--dropdown');
 
-  $('.mobile-menu').click(function() {
+  $('.header__mobile--menu').click(function() {
     dropdown.slideToggle(1000)
   });
 }
