@@ -1,18 +1,18 @@
 function openHiddenTextArea() {
     $('.btnOne').click(function() {
-        $('.hiddenOne').slideToggle(1000)
+        $('.hiddenOne').slideToggle(800)
       });
     $('.btnTwo').click(function() {
-        $('.hiddenTwo').slideToggle(1000)
+        $('.hiddenTwo').slideToggle(800)
     });
     $('.btnThree').click(function() {
-        $('.hiddenThree').slideToggle(1000)
+        $('.hiddenThree').slideToggle(800)
     });
     $('.btnFour').click(function() {
-        $('.hiddenFour').slideToggle(1000)
+        $('.hiddenFour').slideToggle(800)
     });
     $('.btnFive').click(function() {
-        $('.hiddenFive').slideToggle(1000)
+        $('.hiddenFive').slideToggle(800)
     });
 }
 
