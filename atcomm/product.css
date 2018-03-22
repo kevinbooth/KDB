@@ -8,6 +8,9 @@ body {
     margin-right: 0;
     margin-left: 0;
 }
+.oswald__reg {
+    font-family: Oswald-Regular;
+}
 
 /* TITLE RULES */ 
 .title {
@@ -79,6 +82,9 @@ body {
     line-height: 30px;
     padding: 0;
     display: block;
+}
+.hidden__image {
+    width: 100%;
 }
 .center {
     margin: 0 auto;
