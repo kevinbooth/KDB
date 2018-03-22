@@ -58,9 +58,12 @@ body {
     font-size: 18px;
     padding: 5px 13px 5px 13px;
     border-radius: 2px;
-    background-color: lightgray;
+    background-color: transparent;
     border: 1px solid #505050;
     cursor: pointer;
+}
+.product__text--btn:hover {
+    background-color: rgba(0, 79, 157, .3);
 }
 
 /* HIDDEN TEXT RULES */
