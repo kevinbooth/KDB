@@ -14,6 +14,9 @@ function openHiddenTextArea() {
     $('.btnFive').click(function() {
         $('.hiddenFive').slideToggle(800)
     });
+    $('.btnSix').click(function() {
+        $('.hiddenSix').slideToggle(800)
+    });
 }
 
 $( document ).ready(function() {

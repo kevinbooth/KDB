@@ -9,6 +9,7 @@ body {
     margin-left: 0;
 }
 
+/* TITLE RULES */ 
 .title {
     text-align: center;
     background-color: #f2f2f2;
@@ -26,6 +27,7 @@ body {
 
 }
 
+/* PRODUCT TEXT AREA RULES */
 .product {
     padding-top: 15px;
 }
@@ -61,17 +63,17 @@ body {
     cursor: pointer;
 }
 
+/* HIDDEN TEXT RULES */
 .hidden__text {
     display: none;
-    text-align: center;
     padding: 30px;
     background: #f2f2f2;
     box-shadow: inset 0px 2px 15px lightgrey, inset 0px -2px 15px lightgrey;
 }
 .hidden__text--size {
-    padding-bottom: 15px;
     max-width: 1200px;
     margin: 0 auto;
+    line-height: 30px;
 }
 .hidden__text--size:last-child {
     padding-bottom: 0
@@ -79,15 +81,15 @@ body {
 .center {
     max-width: 1200px;
 }
+
+
 /*---MOBILE DEVICE---*/
-
-
-
 @media (max-width: 830px) {
     .margin--top {
         margin-top: 110px;
     }
 
+    /* TITLE RULES*/
     .title--vec {
         max-width: 400px;
     }
@@ -95,6 +97,7 @@ body {
         font-size: 20px;
     }
 
+    /* PRODUCT TEXT AREA RULES */
     .product__text:nth-child(odd) {
         padding: 20px 20px 20px 10px;
     }
