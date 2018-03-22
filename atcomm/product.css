@@ -74,7 +74,7 @@ body {
     box-shadow: inset 0px 2px 15px lightgrey, inset 0px -2px 15px lightgrey;
 }
 .hidden__text--size {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     line-height: 30px;
     padding: 0;
