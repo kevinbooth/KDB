@@ -46,12 +46,12 @@ body {
 .product__text--heading {
     font-family: Oswald-Regular;
     font-size: 25px;
-    padding-bottom: 20px;
+    padding: 0 0 20px 0;
 }
 .product__text--subheading {
     font-family: Oswald-Light;
     font-size: 20px;
-    padding-bottom: 20px;
+    padding: 0 0 20px 0;
 }
 .product__text--btn {
     display: inline-block;
@@ -74,9 +74,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     line-height: 30px;
-}
-.hidden__text--size:last-child {
-    padding-bottom: 0
+    padding: 0;
 }
 .center {
     max-width: 1200px;
@@ -112,5 +110,13 @@ body {
     }
     .product__text--btn {
         font-size: 14px;
+    }
+
+    /* HIDDEN TEXT RULES */
+    .hidden__text {
+        padding: 20px;
+    }
+    .hidden__text--size {
+        font-size: 15px;
     }
 }
